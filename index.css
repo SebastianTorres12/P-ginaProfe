@@ -113,7 +113,17 @@ body {
 
 .texto{
   text-align: justify;
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
   color: #ccc5b9;
   font-family: 'Lucida Sans';
+}
+
+.subtitulo{
+  display:flex;
+  background-color: #eb5e28;
+  border-radius: 3rem;
+  align-items: left;
+  padding: 10px;
 }
