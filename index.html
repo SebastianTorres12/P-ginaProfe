@@ -25,6 +25,18 @@
         </div>
         <br />
         <div class="mainInfo">
+            <div class="container2">
+                <h1>¿Qué es el Grooming?</h1>
+                <p class="descripcion">El grooming es una forma de abuso en línea en la que un adulto establece una
+                    relación emocional con un menor de edad con el objetivo de obtener su confianza y luego explotarla
+                    para obtener favores sexuales, fotografías o videos de contenido sexual explícito. El grooming puede
+                    incluir el uso de tecnologías de la información y la comunicación, como las redes sociales y la
+                    mensajería instantánea, para acercarse a los menores de edad y ganarse su confianza
+                </p>
+            </div>
+        </div>
+        <br />
+        <div class="mainInfo">
             <div class="container">
                 <div class="rail">
                     <div class="holderopcion" onclick=cambiar(1)>
@@ -39,7 +51,22 @@
                     <h1>Técnicas de prevención</h1>
                 </div>
                 <div class="texto">
-                    <p id="2"></p> 
+                    <p id="2"></p>
+                </div>
+                <div class="subtitulo">
+                    <h1>¿Cómo reportarlo?</h1>
+                </div>
+                <div class="texto">
+                    <p id="3"></p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="mainInfo">
+            <div class="containercontactos">
+                <div class="internacionales">
+                    <p>Save the Children: Save the Children es una organización internacional que trabaja para proteger a los niños de la violencia y el abuso, incluido el grooming. Puedes encontrar más información sobre sus programas y servicios en su sitio web: https://www.savethechildren.es/actualidad/grooming-que-es-como-detectarlo-y-prevenirlo</p>
+                    <p>Teléfono de la Esperanza: El Teléfono de la Esperanza es una organización sin fines de lucro que ofrece apoyo emocional y asesoramiento en situaciones de crisis, incluido el grooming. Puedes encontrar más información sobre sus servicios y números de contacto en su sitio web: https://www.telefonodelaesperanza.org/que-hacemos/linea-de-ayuda</p>
                 </div>
             </div>
         </div>
@@ -110,25 +137,46 @@
         if (n == 1) {
             holderopciones[0].classList.add("activo");
             holderopciones[1].classList.remove("activo");
-            let palabras="Hablar abiertamente con los jóvenes: La comunicación abierta y honesta con los jóvenes es clave para prevenir " +
-            "el grooming. Es importante hablar con ellos sobre los peligros de compartir información personal en línea y la importancia de "+
-            "no interactuar con extraños en línea."+
-            "<br/><br/>Enseñar a los jóvenes sobre la privacidad en línea: Es importante enseñar a los jóvenes a mantener su información personal en línea "+
-            "privada y a no compartir información personal con extraños. Esto incluye su nombre completo, dirección, número de teléfono y cualquier "+
-            "otra información personal."+
-            "<br/><br/>Supervisar el uso de Internet de los jóvenes: Es importante supervisar el uso de Internet de los jóvenes y limitar su tiempo en línea si es necesario. Los padres y tutores pueden utilizar software de control parental para bloquear sitios web inapropiados y supervisar la actividad en línea."+
-            "<br/><br/>Enseñar a los jóvenes a reconocer las señales de grooming: Los jóvenes deben saber cómo reconocer las señales de grooming, como recibir regalos o atención excesiva de un adulto en línea. Si un joven sospecha que está siendo objeto de grooming, debe informar inmediatamente a un adulto de confianza."+
-            "<br/><br/>Tomar medidas legales si es necesario: Si se sospecha que un joven ha sido objeto de grooming, es importante informar a las autoridades. El grooming es un delito y puede ser procesado legalmente"+
-            "<br/><br/>Proporcionar apoyo emocional: Si un joven ha sido objeto de grooming, es importante proporcionarle apoyo emocional. Puede ser útil buscar ayuda de un profesional de la salud mental especializado en el tratamiento de víctimas de abuso sexual."+
-            "<br/><br/>En resumen, prevenir el grooming enfocado en jóvenes requiere comunicación abierta, enseñanza sobre privacidad en línea y supervisión adecuada. Si el grooming ocurre, es importante tomar medidas legales y proporcionar apoyo emocional.";
-            document.getElementById('2').innerHTML = palabras;
+            let prevencion = "Hablar abiertamente con los jóvenes: La comunicación abierta y honesta con los jóvenes es clave para prevenir " +
+                "el grooming. Es importante hablar con ellos sobre los peligros de compartir información personal en línea y la importancia de " +
+                "no interactuar con extraños en línea." +
+                "<br/><br/>Enseñar a los jóvenes sobre la privacidad en línea: Es importante enseñar a los jóvenes a mantener su información personal en línea " +
+                "privada y a no compartir información personal con extraños. Esto incluye su nombre completo, dirección, número de teléfono y cualquier " +
+                "otra información personal." +
+                "<br/><br/>Supervisar el uso de Internet de los jóvenes: Es importante supervisar el uso de Internet de los jóvenes y limitar su tiempo en línea si es necesario. Los padres y tutores pueden utilizar software de control parental para bloquear sitios web inapropiados y supervisar la actividad en línea." +
+                "<br/><br/>Enseñar a los jóvenes a reconocer las señales de grooming: Los jóvenes deben saber cómo reconocer las señales de grooming, como recibir regalos o atención excesiva de un adulto en línea. Si un joven sospecha que está siendo objeto de grooming, debe informar inmediatamente a un adulto de confianza." +
+                "<br/><br/>Tomar medidas legales si es necesario: Si se sospecha que un joven ha sido objeto de grooming, es importante informar a las autoridades. El grooming es un delito y puede ser procesado legalmente" +
+                "<br/><br/>Proporcionar apoyo emocional: Si un joven ha sido objeto de grooming, es importante proporcionarle apoyo emocional. Puede ser útil buscar ayuda de un profesional de la salud mental especializado en el tratamiento de víctimas de abuso sexual." +
+                "<br/><br/>En resumen, prevenir el grooming enfocado en jóvenes requiere comunicación abierta, enseñanza sobre privacidad en línea y supervisión adecuada. Si el grooming ocurre, es importante tomar medidas legales y proporcionar apoyo emocional.";
+            let denuncia = "Si se sospecha que un joven ha sido objeto de grooming, es importante reportar la situación inmediatamente. Aquí te dejo algunos pasos que puedes seguir para reportar el grooming: " +
+                "<br/><br/>Habla con el joven: Si sospechas que un joven está siendo objeto de grooming, habla con él y pregúntale si alguien lo está acosando o haciendo sentir incómodo en línea. Asegúrate de que el joven sepa que puede hablar contigo sin miedo." +
+                "<br/><br/>Toma capturas de pantalla: Si es posible, toma capturas de pantalla de las conversaciones y las actividades en línea que te hacen sospechar que se está produciendo el grooming. Esto puede ser útil más adelante si necesitas reportar la situación a las autoridades." +
+                "<br/><br/>Reporta la situación al proveedor de servicios en línea: La mayoría de los sitios web y plataformas en línea tienen mecanismos para reportar el acoso en línea y el grooming. Busca la sección de <<ayuda>> o <<soporte>> en el sitio web y sigue las instrucciones para presentar un informe." +
+                "<br/><br/>Reporta la situación a las autoridades: Si crees que un joven está en peligro inmediato, llama al número de emergencia local o a la línea directa de abuso infantil. En muchos países, también puedes informar la situación a la policía o a la unidad de delitos en línea." +
+                "<br/><br/>Busca ayuda de un profesional: Si el joven ha sido víctima de grooming, es importante buscar ayuda de un profesional de la salud mental. Pueden ofrecer apoyo emocional y asesoramiento para ayudar al joven a recuperarse." +
+                "<br/><br/>En resumen, si sospechas que un joven está siendo objeto de grooming, es importante reportar la situación a las autoridades y buscar ayuda de un profesional. También es importante hablar con el joven y tomar capturas de pantalla de las conversaciones y las actividades en línea que te hacen sospechar que se está produciendo el grooming. Recuerda que el grooming es un delito y que reportarlo puede ayudar a prevenir que otros jóvenes sean víctimas.";
+            document.getElementById('2').innerHTML = prevencion;
+            document.getElementById('3').innerHTML = denuncia;
         } else {
             holderopciones[1].classList.add("activo");
             holderopciones[0].classList.remove("activo");
-            let palabras="Si se sospecha o se es víctima de grooming, es importante tomar medidas inmediatas para protegerse y buscar ayuda. Aquí hay algunos consejos y estrategias para prevenir y enfrentar el grooming enfocado en jóvenes:";
-            document.getElementById('2').innerHTML = palabras;
+            let prevencion = "Si se sospecha o se es víctima de grooming, es importante tomar medidas inmediatas para protegerse y buscar ayuda. Aquí hay algunos consejos y estrategias para prevenir y enfrentar el grooming enfocado en jóvenes:" +
+                "<br/><br/>Detener la comunicación: Si se siente incómodo o sospecha que está siendo objeto de grooming, es importante dejar de comunicarse con esa persona y bloquear cualquier contacto con ella." +
+                "<br/><br/>Informar a un adulto de confianza: Si es menor de edad, es importante informar a un adulto de confianza, como un padre, tutor o maestro, lo que está sucediendo." +
+                "<br/><br/>Guardar evidencia: Es importante guardar cualquier evidencia, como capturas de pantalla o conversaciones guardadas, que puedan ser útiles para probar lo que está sucediendo." +
+                "<br/><br/>Reportar la actividad a las autoridades: Si la situación es grave, se puede considerar la posibilidad de reportar la actividad a las autoridades, como la policía."; +
+                    "<br/><br/>Buscar apoyo y asesoramiento: Si se es víctima de grooming, es importante buscar apoyo y asesoramiento de un profesional de la salud mental o de una organización especializada en el tema." +
+                    "<br/><br/>La seguridad en línea es una preocupación creciente, y el grooming en línea es una forma de acoso y abuso que ocurre en línea, y que afecta a muchas personas, especialmente a menores de edad. Si has sido víctima de grooming en línea, o si sospechas que alguien está siendo víctima de grooming en línea, es importante que tomes medidas para protegerse y buscar ayuda.";
+
+            let denuncia = "Aquí hay algunos pasos que puedes seguir para reportar el grooming en línea y buscar ayuda:" +
+                "<br/><br/>Documenta todas las pruebas: Toma capturas de pantalla de las conversaciones, correos electrónicos o mensajes de texto y guárdalos. También es importante tomar nota de la hora y la fecha en que ocurrieron los incidentes." +
+                "<br/><br/>Contacta a una organización de apoyo: Hay muchas organizaciones que pueden ayudarte en casos de grooming en línea. Puedes buscar en línea organizaciones en tu país o región que brinden apoyo a víctimas de acoso en línea. Algunas opciones podrían ser <<Save The Children>>, <<PantallasAmigas>> en España, <<NetSafe>> en Nueva Zelanda, <<Childline>> en el Reino Unido, etc." +
+                "<br/><br/>Contacta a las autoridades: Si el grooming en línea incluye una amenaza o un delito, debes contactar a las autoridades locales. Esto podría ser la policía, la fiscalía o el centro de ayuda a la infancia, según el país en el que te encuentres." +
+                "<br/><br/>Reporta la situación: Si el acoso se produce en una plataforma en línea, como un sitio web o una aplicación, reporta la situación a la administración del sitio o la aplicación. La mayoría de las plataformas en línea tienen una función de informe sobre abuso o acoso." +
+                "<br/><br/>Es importante tomar medidas para reportar el grooming en línea y buscar ayuda. Si te encuentras en una situación de acoso, no dudes en buscar apoyo de organizaciones y autoridades competentes.";
+            document.getElementById('2').innerHTML = prevencion;
         }
-        
+
     }
 </script>
 

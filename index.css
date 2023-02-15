@@ -60,7 +60,7 @@ body {
   font-size: 6vw;
   padding-right: 40px;
   padding-top: 20px;
-  font-family: Geneva;
+  font-family: 'Lucida Sans';
 }
 .mainInfo {
   display: flex;
@@ -68,7 +68,6 @@ body {
   justify-content: center;
   padding: 5px;
   width: 100%;
-  border: 1px solid white;
 }
 .container {
   display: grid;
@@ -79,12 +78,31 @@ body {
   border-radius: 1rem;
   background-color: #252422;
   padding: 5px;
-  border: 1px solid red;
+  border: 1px solid #ccc5b9;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  min-height: 30vh;
+  border-radius: 1rem;
+  background-color: #eb5e28;
+  padding: 5px; 
+  color:#252422;
+  border: 1px solid #ccc5b9;
+}
+.descripcion{
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #252422;
+  font-family: 'Lucida Sans';
 }
 
 .container .rail {
+  font-family: 'Lucida Sans';
   position: relative;
-  width: 20vw;
+  width: 25vw;
   height: 10vh;
   background-color: #fff;
   border-radius: 3rem;
@@ -120,10 +138,40 @@ body {
   font-family: 'Lucida Sans';
 }
 
+
 .subtitulo{
+  font-family: 'Lucida Sans';
   display:flex;
   background-color: #eb5e28;
   border-radius: 3rem;
   align-items: left;
   padding: 10px;
+}
+
+.containercontactos{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  min-height: 30vh;
+  border-radius: 1rem;
+  background-color: #ccc5b9;
+  padding: 5px; 
+  color:#252422;
+  border: 1px solid #eb5e28;
+}
+
+
+.internacionales{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  padding: 5%;
+
+}
+
+.internacionales p{
+  text-align: justify;
+  color: #252422;
+  font-family: 'Lucida Sans';
+  padding-right: 10%;
 }
