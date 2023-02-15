@@ -56,4 +56,85 @@ body{
   font-size: 6vw;
   padding-right: 40px;
   padding-top: 20px;
+  font-family: Geneva;
+}
+
+.container {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #403d39;
+}
+
+.container .switch{
+  height: 8vh;
+  background-image: linear-gradient(to top, #252422, #252422);
+  padding: 0 1.5rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container .switch .input{
+  display: none;
+}
+
+.container .switch .rail{
+  position: relative;
+  width: 20vw;
+  height: 10vh;
+  background-color: #fff;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.holderopcion{
+  width: 50%;
+  height: 100%;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.activo{
+  background-color: rgba(235,94,40,1);
+  color: white;
+  
+}
+/* .container .switch .rail .circle{
+  display: block; 
+  width: 10vw;
+  height: 12vh;
+  background-color: rgba(235,94,40,1);
+  border-radius: 3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transition: transform 0.4s;
+} */
+
+.container .switch .indicator{
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border-color: black;
+  margin-left: 1.5rem;
+  transition: 0.4s;
+}
+
+.container .switch .input:checked ~ .rail .circle{
+  transform: translate(110%, -50%);
+}
+
+.container .switch .input:checked ~ .indicator{
+  background-color: red;
 }
