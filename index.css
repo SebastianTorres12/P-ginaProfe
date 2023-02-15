@@ -1,18 +1,20 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: 0;
 }
-body{
+
+body {
   text-align: center;
   z-index: 0;
-  background-color: white;
+  background-color: #403d39;
 }
 
-.header{
+.header {
   background-color: black;
   color: white;
 }
+
 .piePagina {
 
   display: grid;
@@ -27,61 +29,60 @@ body{
   width: 50px;
 }
 
-.footer{
+.footer {
   background-color: #403d39;
-  color:white;
-}
-.footer p{
-  background-color: black;
-}
-.textoFooter {
-  display:contents;
+  color: white;
 }
 
-.imgPrincipal{
+.footer p {
+  background-color: black;
+}
+
+.textoFooter {
+  display: contents;
+}
+
+.imgPrincipal {
   width: 100%;
 }
 
-.contenedor{
+.contenedor {
   background-image: url("img1.jpeg");
-  height: 100vh; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  color:white;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
   text-align: right;
 }
 
-.contenedor h1{
+.contenedor h1 {
   font-size: 6vw;
   padding-right: 40px;
   padding-top: 20px;
   font-family: Geneva;
 }
-
-.container {
-  min-height: 30vh;
+.mainInfo {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  background-color: #403d39;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid white;
+}
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+  width: 80%;
+  min-height: 30vh;
+  border-radius: 1rem;
+  background-color: #252422;
+  padding: 5px;
+  border: 1px solid red;
 }
 
-.container .switch{
-  height: 8vh;
-  background-image: linear-gradient(to top, #252422, #252422);
-  padding: 0 1.5rem;
-  border-radius: 0.8rem;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.container .switch .input{
-  display: none;
-}
-
-.container .switch .rail{
+.container .rail {
   position: relative;
   width: 20vw;
   height: 10vh;
@@ -94,7 +95,8 @@ body{
   padding-left: 7px;
   padding-right: 7px;
 }
-.holderopcion{
+
+.holderopcion {
   width: 50%;
   height: 100%;
   border-radius: 3rem;
@@ -103,38 +105,15 @@ body{
   justify-content: center;
   transition: all 0.5s ease;
 }
-.activo{
-  background-color: rgba(235,94,40,1);
+
+.activo {
+  background-color: rgba(235, 94, 40, 1);
   color: white;
-  
-}
-/* .container .switch .rail .circle{
-  display: block; 
-  width: 10vw;
-  height: 12vh;
-  background-color: rgba(235,94,40,1);
-  border-radius: 3rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  transition: transform 0.4s;
-} */
-
-.container .switch .indicator{
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  border-radius: 50%;
-  border-color: black;
-  margin-left: 1.5rem;
-  transition: 0.4s;
 }
 
-.container .switch .input:checked ~ .rail .circle{
-  transform: translate(110%, -50%);
-}
-
-.container .switch .input:checked ~ .indicator{
-  background-color: red;
+.texto{
+  text-align: justify;
+  padding: 10%;
+  color: #ccc5b9;
+  font-family: 'Lucida Sans';
 }

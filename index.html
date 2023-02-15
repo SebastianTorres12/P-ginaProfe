@@ -11,7 +11,7 @@
 </head>
 
 <body onload=cambiar(1)>
-    <header class="header" >
+    <header class="header">
         <h1>Grooming</h1>
     </header>
     <section>
@@ -24,9 +24,8 @@
             <h1>esto</h1>
         </div>
         <br />
-        <div class="container">
-            <label class="switch">
-                <input type="checkbox" class="input">
+        <div class="mainInfo">
+            <div class="container">
                 <div class="rail">
                     <div class="holderopcion" onclick=cambiar(1)>
                         <h1 class="opcion" id="padre">Soy padre</h1>
@@ -34,13 +33,11 @@
                     <div class="holderopcion" onclick=cambiar(2)>
                         <h1 class="opcion" id="victima">Soy víctima</h1>
                     </div>
-                    
-                    <span class="circle"></span>
-
                 </div>
-
-            </label>
-
+                <div class="texto">
+                    <p id="2"></p> 
+                </div>
+            </div>
         </div>
 
     </section>
@@ -109,10 +106,25 @@
         if (n == 1) {
             holderopciones[0].classList.add("activo");
             holderopciones[1].classList.remove("activo");
+            let palabras="Hablar abiertamente con los jóvenes: La comunicación abierta y honesta con los jóvenes es clave para prevenir " +
+            "el grooming. Es importante hablar con ellos sobre los peligros de compartir información personal en línea y la importancia de "+
+            "no interactuar con extraños en línea."+
+            "<br/><br/>Enseñar a los jóvenes sobre la privacidad en línea: Es importante enseñar a los jóvenes a mantener su información personal en línea "+
+            "privada y a no compartir información personal con extraños. Esto incluye su nombre completo, dirección, número de teléfono y cualquier "+
+            "otra información personal."+
+            "<br/><br/>Supervisar el uso de Internet de los jóvenes: Es importante supervisar el uso de Internet de los jóvenes y limitar su tiempo en línea si es necesario. Los padres y tutores pueden utilizar software de control parental para bloquear sitios web inapropiados y supervisar la actividad en línea."+
+            "<br/><br/>Enseñar a los jóvenes a reconocer las señales de grooming: Los jóvenes deben saber cómo reconocer las señales de grooming, como recibir regalos o atención excesiva de un adulto en línea. Si un joven sospecha que está siendo objeto de grooming, debe informar inmediatamente a un adulto de confianza."+
+            "<br/><br/>Tomar medidas legales si es necesario: Si se sospecha que un joven ha sido objeto de grooming, es importante informar a las autoridades. El grooming es un delito y puede ser procesado legalmente"+
+            "<br/><br/>Proporcionar apoyo emocional: Si un joven ha sido objeto de grooming, es importante proporcionarle apoyo emocional. Puede ser útil buscar ayuda de un profesional de la salud mental especializado en el tratamiento de víctimas de abuso sexual."+
+            "<br/><br/>En resumen, prevenir el grooming enfocado en jóvenes requiere comunicación abierta, enseñanza sobre privacidad en línea y supervisión adecuada. Si el grooming ocurre, es importante tomar medidas legales y proporcionar apoyo emocional.";
+            document.getElementById('2').innerHTML = palabras;
         } else {
             holderopciones[1].classList.add("activo");
             holderopciones[0].classList.remove("activo");
+            let palabras="Si se sospecha o se es víctima de grooming, es importante tomar medidas inmediatas para protegerse y buscar ayuda. Aquí hay algunos consejos y estrategias para prevenir y enfrentar el grooming enfocado en jóvenes:";
+            document.getElementById('2').innerHTML = palabras;
         }
+        
     }
 </script>
 
