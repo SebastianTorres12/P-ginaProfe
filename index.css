@@ -6,5 +6,54 @@
 body{
   text-align: center;
   z-index: 0;
-  background-color: aquamarine;
+  background-color: white;
+}
+
+.header{
+  background-color: black;
+  color: white;
+}
+.piePagina {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  place-items: center;
+  column-gap: 0px;
+  padding-left: 100px;
+  padding-right: 10px;
+}
+
+.piePagina img {
+  width: 50px;
+}
+
+.footer{
+  background-color: #403d39;
+  color:white;
+}
+.footer p{
+  background-color: black;
+}
+.textoFooter {
+  display:contents;
+}
+
+.imgPrincipal{
+  width: 100%;
+}
+
+.contenedor{
+  background-image: url("img1.jpeg");
+  height: 100vh; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  color:white;
+  text-align: right;
+}
+
+.contenedor h1{
+  font-size: 6vw;
+  padding-right: 40px;
+  padding-top: 20px;
 }
