@@ -163,15 +163,13 @@ body {
 
 .internacionales{
   display: grid;
-  grid-auto-flow: column;
-  justify-content: space-between;
-  padding: 5%;
-
+  grid-template-columns:1fr 1fr;
+  grid-gap:1em;
 }
 
 .internacionales p{
   text-align: justify;
   color: #252422;
   font-family: 'Lucida Sans';
-  padding-right: 10%;
+  padding-left: 10%;
 }
